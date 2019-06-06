@@ -1,430 +1,567 @@
 <!DOCTYPE html>
-<meta charset="utf-8" />
-<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Noto+Sans+KR" rel="stylesheet" />
 <html>
 <head>
-	<title>KIM-HYUK</title>
+	<meta charset="utf-8"/>
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker|Noto+Sans+KR" rel="stylesheet" />
 
+	<title>김혁 포토폴리22</title>
 	<style type="text/css">
-	/*@font-face{
-		font-family: myfirstfont;
-		src:url("UhBee charming.ttf");*/
 
-	@font-face{
-		font-family: nanum_L;
-		src:url("NanumSquareL.otf");
+	body{margin:0px;}
+
+	.{list-style-type:none;
+	  text-decoration:none;}
+
+		/* 00픽셀 미만인 스마트폰 */
+		[class*="c_"] {
+			width:100%;
+		}
+		/* 600픽셀 이상인 태블릿 */
+		@media only screen and (min-width:600px) {
+			.c_m_1 {width:8.33%;}
+			.c_m_2 {width:16.66%;}
+			.c_m_3 {width:25%;}
+			.c_m_4 {width:33.33%;}
+			.c_m_5 {width:41.66%;}
+			.c_m_6 {width:50%;}
+			.c_m_7 {width:58.33%;}
+			.c_m_8 {width:66.66%;}
+			.c_m_9 {width:75%;}
+			.c_m_10 {width:83.33%;}
+			.c_m_11 {width:91.66%;}
+			.c_m_12 {width:100%;}
+		}
+		/* 데스크톱 컴퓨터, 노트북 등 */
+		@media only screen and (min-width:768px) {
+			.c_1 {width:8.33%;}
+			.c_2 {width:16.66%;}
+			.c_3 {width:25%;}
+			.c_4 {width:33.33%;}
+			.c_5 {width:41.66%;}
+			.c_6 {width:50%;}
+			.c_7 {width:58.33%;}
+			.c_8 {width:66.66%;}
+			.c_9 {width:75%;}
+			.c_10 {width:83.33%;}
+			.c_11 {width:91.66%;}
+			.c_12 {width:100%;}
+		}
+	#section1 {
+		background-color: #ffffff;
+	padding-top:70px;}
+
+	#section2 {text-align:center;
+		background-color: #385444;
 	}
 
-	@font-face{
-		font-family: nanum_R;
-		src:url("NanumSquareR.otf");
-	}
-
-	@font-face{
-		font-family: nanum_B;
-		src:url("NanumSquareB.otf");
-	}
-
-	@font-face{
-		font-family: nanum_EB;
-		src:url("NanumSquareEB.otf");
-	}
-
-	#font_target{font-family: 'Noto Sans KR', sans-serif;}
-	/*<div id="font_target"></div>*/
-
-	html{
-		margin:0px;
-	}
-	body{
-		margin:0px;
-	}
-
-	a{
- 		text-decoration: none;
- 		color : #ffff;
-	}
-
-	a:hover{
-		color: #1e496a;
-	}
-
-	#wrap{
-		background-color: #ffff;
-		min-width: 800px; /*최소 넓이*/
-		max-width: 1920px; /*최대 넓이*/
-		margin-left: auto;
-		margin-right: auto;
+	#section3 {text-align:center;
+		background-color:  #ffffff;
 
 	}
 
-	.clear{
-		clear: both;
-		height: 0px;
-		overflow: hidden;
-		margin: 0px;
-		border: none;
+	#section4 {text-align:center;
+		background-color:  #ffffff;
+		}
+
+	#section5 {text-align:left;
+		background-color:black;
 	}
 
-	#header{
-		background-color: #a5d3e9;
-		text-align: left;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		padding-left: 10px;
-	}
-
-	#header ul{
-		color: #fff;
-		float: right;
-		margin: 0px;
-		padding-top: 18px;
-		padding-bottom: 10px;
-		padding-right: 20px;
-		padding-left: 0px;
-	}
-
-	#header li{
-		list-style: none;
-		float: left;
-		padding-left: 10px;
-		padding-right: 10px;
-		font-size: 15px;
-	}
-
-	#header img{
-		height: 70px;
-	}
-
-	#footer{background-color: #a5d3e9;}
-
-	#footer_1{
-		background-color: #a5d3e9;
+	section div {
+		font-family: 'NanumSquareL';
+		font-style: normal;
 		text-align: center;
-		padding-top: 35px;
-		color: white;
-		height: 150px;
-
-
-		margin-right: auto;
-    	margin-left: auto;
-    	width: 400px;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 
-	#footer img{
-		width:150px;
-		height:40px;
-		padding-bottom: 20px;
-	}
+	span {
+		font-size: 4em;
+		font-style: normal;
+		color: #fff;}
 
-	#footer ul{
-		color: #fff;
-		width: 400px;
-		height: 15px;
-		height: auto;
-		text-align: center;
-		margin:0px;
-		padding:0px;
+	#im{width:700px;
+		margin-left:auto;
+		margin-right:auto;
+		top:0px;
+		margin-top:300px;
+		margin-bottom:-100px;}
 
-	}
+	.clear{margin:0px;
+		   clear:both;
+		 top:0;
+		 bottom:0;
+		 width:0px;}
 
-	#footer li{
-		list-style: none;
-		float: left;
-		padding-left: 10px;
-		padding-right: 10px;
-		font-size: 10px;
-	}
+	#NB{top:0;
+		padding-top:30px;
+		margin:0px;}
 
-	#footer p{
-		padding: 30px;
-		padding-bottom: 0px;
-		margin:0px;
+	#NB1{margin-bottom:0px;
+		 margin-left:0px;
+		 margin-right:0px;
+		 margin-top:70px;
+		 float:right;
+		 padding-right:70px;}
 
-		font-family: nanum_B;
-		font-size: 10px;
-	}
+	#NBC{float:left;
+	 	 font-size:17px;
+	 	 padding-left:40px;
+	 	 list-style-type:none;
+	 	 }
 
-	#content{background-image: url(img/back.jpg);}
+	a{text-decoration: none;
+	  color:black;
+	  font-weight:200;}
 
-	#content1{
-		padding-top: 220px;
-		padding-bottom: 80px;
-		margin: 0px;
+	#m1{color:black;
+		 text-align:center;
+		 font-style:oblique;
+		 font-weight:200;
+		 font-size:25px;}
 
-		margin-right: auto;
-    	margin-left: auto;
-    	width: 1250px;
-
-	}
-
-	#content1 ul{
-		padding-left: 0px;
-		text-align: center;
-	}
-
-	#content1 li{
-		list-style: none;
-		float: left;
-
-	}
-
-	.content_container{
-		text-align: center;
-		padding-top: 50px;
-
-	}
-
-	#content2_1{
-		padding-top: 50px;
-		padding-bottom: 70px;
-	}
-
-	.content_title{
-		color: #000;
-		font-size: 20px;
-		margin: 0px;
-
-		font-family: nanum_EB;
-	}
-
-	.content_detail{
-		font-size: 15px;
-		line-height: 30px;
-		padding-top: 50px;
-		padding-bottom: 70px;
-		margin: 0px;
-
-		font-family: nanum_R;
-
-		/*font-family: myfirstfont;*/
-	}
-
-	#content2{
-		background-color: #fcf7f4;
-		padding-top: 120px;
-		padding-bottom: 70px;
-	}
-
-	#content2 img{
-		width: 10%;
-		height: 10%;
-	}
-
-	#content2 ul{
-		padding: 0px;
-		padding-bottom: 50px;
-		margin: 0px;}
-
-	#content2 li{
-		float: left;
-		width: 24.5%;
-		list-style: none;
-	}
-
-	#content2 dt{
-		font-weight: bold;
-		margin: 15px;
-
-		font-family: nanum_B;
-	}
-
-	#content2 dd{
-		margin:15px;
-		font-family: nanum_R;
-	}
-
-	#content_container{
-		float: left;
-		width: 24.5%;
-		list-style: none;
-		border-right: solid 1px #ccc;
-	}
-
-	#content3{
-		background-color: #ffff;
-		text-align: center;
-		padding-top: 150px;
-		padding-bottom: 150px;
-	}
-
-	#content3 ul{
-		padding: 0px;
-
-	}
-
-	#content3 li{
-	 	list-style: none;
-	 	float: left;
-	 	width: 33%;
-	}
-
-	#content3 img{
-		width: 100%;
-		display: block;
-	}
-
-	#img_left{
-		width: 20%;
-	}
-
-	#img_mid{
-		width: 20%;
-	}
-
-	#img_mid iframe{
-		width: 100%;
-		height: 512.14px;
-		margin:0px;
-		padding: 0px;
-	}
-
-	#img_right{
-		width:20%;
-	}
-
-	#content3_img .float_div{
-		float: left;
-	}
-
-	#content3_img .w_20{width: 20%;}
-
-	#content3_img .w_60{width: 60%;}
+	#m2{color:black;
+		 text-align:center;
+		 font-style:oblique;
+		 font-weight:400;
+		 font-size:20px;}
 
 
-/*--------------뒤에 움직이는 배경-----------------------------
-	.back{
-		height: 600px;
-		background-attachment: fixed;
-	}
+	#abat{color:#f5cbc0;
+		  font-size:18px;
+		  text-align:center;
+		  margin-bottom:10px;}
 
-	#b1{
-		background-image: url("img/back.jpg");
-	}
-*/
+	#aba{color:white;
+		 font-size:12px;
+		 text-align:center;
+		 font-weight:400;}
+
+	#content1 ul li{margin:0px;
+					padding:0px;}
+
+
+
+	#content1 ul{text-align:center;
+				 padding:0px;
+				 margin:0px;
+				 top:0;}
+
+	#content1{text-align:center;}
+
+	#content2{top:-130px;
+			  bottom:0;}
+
+	#content2 ul{text-align:center;}
+			#content2 li{list-style: none;
+						 float: left;
+						 width: 24.5%;
+						 border-right: solid 1px #fff;}
+
+			#content2 li:nth-child(4){border: none;}
+
+			#content2 dt:nth-child(1){font-weight: bold;
+									  padding-top: 10px;
+
+								       	  color:white;}
+
+			#content2 dt{font-weight: bold;
+						 padding-top: 10px;
+
+						 color:white;
+						 font-size:20px;}
+
+			#content2 dd{margin: 0px;
+						 padding: 0px;
+						 color:white;
+						 font-weight:200;
+						 padding-left:15px;
+						 padding-right:15px;
+						 font-size:18px;}
+
+		#content3 li{margin-left:30px;}
+
+		#abat2{color:white;
+		  font-size:15px;
+		  text-align:center;
+		  margin-bottom:10px;}
+
+	#aba2{color:black;
+		 font-size:14px;
+		 text-align:center;
+		 font-weight:400;}
+
+		 .gnb_1{position:fixed;
+		   width:100%;
+		   height:70px;
+		   z-index: 15;
+		   background-color:white;
+		   box-shadow:1px 1px 20px #bfbfbf;}
+
+	#gnb_2{float:left;
+		   margin-top:25px;
+		   margin-left: 20px;
+		   font-size:15px;
+		 	}
+
+	#gnb_3{float:right;
+		   margin-top:25px;
+		   margin-right: 20px;
+		   font-size:15px;}
+
+
+	#gnb_4{float:left;
+		   margin-top:25px;
+		   margin-left:40px;
+		   font-size:15px;
+		   display:inline-block;}
+
+	#gnb_4>a{text-decoration: none;
+			 color:#385444;
+			 font-size:15px;
+			 margin-left:2px;
+			 font-weight:600;
+			 border-right: solid 1px black;}
+
+			 .content_title{
+				 color: #f5cbc0;
+				 font-size: 25px;
+				 text-align: center;
+			 }
+
+			 .content_detail/*p태그*/{
+				 font-size: 14px;
+				 line-height: 30px;
+			 }
+
+
 /*--------------------롤오버---------------------------------*/
-	#over_1{
- 		width:350px; height:300px;
-  		background-image: url("img/1_3.png");
-  		background-size: 300px;
-  		background-repeat: no-repeat;
- 	}
+			 #over_1{
+		  		widows: 300px; height:300px;
+		   		background-image: url("image/play2_im/1.png");
+		   		background-size: 240px;
+		   		background-repeat: no-repeat;
+		  	}
 
-	#over_1:hover{
-  		background-image: url("img/1_4.png");
-  		background-size: 300px;
-  		background-repeat: no-repeat;
- 	}
+		 	#over_1:hover{
+		   		background-image: url("image/play2_im/1-1.png");
+		   		background-size: 240px;
+		   		background-repeat: no-repeat;
+		  	}
 
- 	#over_2{
-  		width:300px; height:300px;
-  		background-image: url("img/2.png");
-  		background-size: 300px;
-  		background-repeat: no-repeat;
- 	}
+				#over_2{
+					 widows: 300px; height:300px;
+					 background-image: url("image/play2_im/2.png");
+					 background-size: 240px;
+					 background-repeat: no-repeat;
+				 }
 
-	#over_2:hover{
-  		background-image: url("img/2_2.png");
-  		background-size: 300px;
-  		background-repeat: no-repeat;
- 	}
+				#over_2:hover{
+					 background-image: url("image/play2_im/2-1.png");
+					 background-size: 240px;
+					 background-repeat: no-repeat;
+				 }
+				 #over_3{
+				 	 widows: 300px; height:300px;
+				 	 background-image: url("image/play2_im/3.png");
+				 	 background-size: 240px;
+				 	 background-repeat: no-repeat;
+				  }
 
- 	#over_3{
-  		width:300px; height:300px;
-  		background-image: url("img/3.png");
-  		background-size: 300px;
-  		background-repeat: no-repeat;
- 	}
+				 #over_3:hover{
+				 	 background-image: url("image/play2_im/3-1.png");
+				 	 background-size: 240px;
+				 	 background-repeat: no-repeat;
+				  }
+					#over_4{
+						 widows: 300px; height:300px;
+						 background-image: url("image/play2_im/4.png");
+						 background-size: 240px;
+						 background-repeat: no-repeat;
+					 }
 
-	#over_3:hover{
- 		background-image: url("img/3_2.png");
-  		background-size: 300px;
-  		background-repeat: no-repeat;
- 	}
-
-	 #over_4{
-  		width:300px; height:300px;
-  		background-image: url("img/5.png");
-  		background-size: 300px;
-  		background-repeat: no-repeat;
- 	}
-
-	#over_4:hover{
-  		background-image: url("img/5_2.png");
-  		background-size: 300px;
-  		background-repeat: no-repeat;
- 	}
+					#over_4:hover{
+						 background-image: url("image/play2_im/4-1.png");
+						 background-size: 240px;
+						 background-repeat: no-repeat;
+					 }
 
 	</style>
-
-
-
-
 </head>
 <body>
-	<div id="wrap">
+	<div class='gnb_1' class="c_m_12 c_12">
 
-		<div id="header">
-			<a href="./index.html"><img src="./logo2.png"></a>
 
-			<ul>
-				<li><a href="./index.html">At Radio</a></li>
-				<li><a href="./Hyuk_1.html">FM19.95</a></li>
-				<li><a href="./Hyuk_2.html">FM200.8</a></li>
-				<li><a href="./Hyuk_3.html">FM20.14</a></li>
-				<li><a href="./Hyuk_4.html">FM201.9</a></li>
+<ul id='gnb_4'>
+<a href="index7.html" target="_self" style='padding-left:5px; padding-right:5px; '>중간평가 레포트</a>
+<a href="index12_21461041.html" target="_self"  style='padding-left:5px; padding-right:5px; '>14주차</a>
+<a href="index11_21461041.html" target="_self" style='padding-left:5px; padding-right:5px; '>13주차</a>
+<a href="index10_21461041.html" target="_self" style='padding-left:5px; padding-right:5px; '>12주차</a>
+<a href="index9_21461041.html" target="_self" style='padding-left:5px; padding-right:5px; '>11주차</a>
+<a href="index8_21461041.html" target="_self" style='padding-left:5px; padding-right:5px; '>10주차</a>
+
+
+
 			</ul>
 
-		</div>
 
-		<div id="content">
-			<div id="content1">
-				<ul>
-					<li><a href="./Hyuk_1.html"><div id="over_1"></div></a></li>
-					<li><a href="./Hyuk_2.html"><div id="over_2"></div></a></li>
-					<li><a href="./Hyuk_3.html"><div id="over_3"></div></a></li>
-					<li><a href="./Hyuk_4.html"><div id="over_4"></div></a></li>
-					<div class="clear"></div>
-				</ul>
+
 			</div>
-		</div>
+		</header>
+
+	<div id="main" class="scroll-container">
+		<section id="section1" class="c_m_12 c_12">
+				<div id='NB'>
+					<img src='image/play2_im/av_2.png' style='float:left; padding-left:70px; height:30px; margin-top:70px;'/>
+				<ul id='NB1'>
+					<li id='NBC'><a href='#section1'>About HYUK</a></li>
+					<li id='NBC'><a href='#section2'>Web Publishing</a></li>
+					<li id='NBC'><a href='#section4'>Work</a></li>
+					<li id='NBC'><a href='#section5'>After Project</a></li>
+					<div class='clear'></div>
 
 
-
-		<div id="b1" class="back">
-			<div id="content2" class="content_container">
-				<div id="content2_1">
-					<h1 class="content_title">혁디오 [HUYK:dio]</h1>
-
-					<p class="content_detail">
-						어렸을 때부터 늘 머리맡에 틀어놓고 자던 라디오불 꺼진 내방에 들려오는 그 목소리는 날 아는 듯늘 친근하게 다가왔다.<br>
-						내가 기쁜지 슬픈지 어떻게아는지 늘 공감해주었고 나는 그렇게 편안함을 느꼈다.<br>
-						언제나 같은 자리에서 소리 내며 날 위로하는 라디오<br>
-					<br>	나는 그런 라디오가 되고 싶다.<br>
-
-					</p>
+				</ul>
+				<div class='clear'></div>
 				</div>
 
+				<div id='im'class="c_m_12 c_12">
+				<img src='image/play2_im/av_1.png' style='width:100%; height:100%;'/>
+				</div>
+			<div class='clear'></div>
 
 
-		</div>
+		</section>
+
+		<div class='clear'></div>
+
+		<section id="section2" class="c_m_12 c_12">
+
+			<div id='content1' style='top:0px; margin-top:353px;display: inline-block;'>
+			<ul >
+				<h3 class="content_title">Web Publishing</h3>
+				<p class="content_detail" style= color:white;>웹퍼블리싱외에 작업물입니다.</p>
+		<li style='float:left;list-style-type: none; width:25%'>
 
 
-		<div id="footer">
-			<div id="footer_1">
-				<img src="./logo.png">
-				<ul>
-					<li>At Radio</li>
-					<li>FM19.95</li>
-					<li>FM20.08</li>
-					<li>FM201.4</li>
-					<li>FM20.19</li>
+				<p id="over_1" style='width:240px; height:240px; '/>
+				<h1 id='abat'>main page</h1>
+				<p id='aba'>라디오 컨셉의 메인페이지이다.<br/>
+							버튼들을 누르면 해당 페이지로 이동한다.<br/>
+
+							</p>
+<div class='clear'></div>
+		</li>
+
+		<li style='float:left; list-style-type: none;width:25%'>
+		<p id="over_2" style='width:240px; height:240px; '/>
+		<h1 id='abat'>sub page1</h1>
+		<p id='aba'>어린시절의 나를 소개하는 페이지이다.<br/>
+					글과 사진만 넣어 간결하게 표현했다<br/>
+				 </p>
+		<div class='clear'></div>
+
+		</li>
+
+
+		<li style='float:left;list-style-type: none;width:25% '>
+
+		<p id="over_3" style='width:240px; height:240px; '/>
+		<h1 id='abat'>sub page2</h1>
+		<p id='aba'>학창시절의 나를 소개하는 페이지이다.<br/>
+					입시미술을 하던 당시 그림을 넣었다<br/>
+					</p>
+
+<div class='clear'></div>
+		</li>
+
+		<li style='float:left;list-style-type: none;width:25% '>
+
+		<p id="over_4" style='width:240px; height:240px; '/>
+		<h1 id='abat'>sub page3</h1>
+		<p id='aba'>현재의 나를 소개하는 페이지이다.<br/>
+					마지막 소감과 정리하는 글을 남겼다. <br/>
+				</p>
+
+<div class='clear'></div>
+		</li>
+
+	<div class='clear'></div>
+	</ul>
+
+</div>
+
+		<section id="section3" class="c_m_12 c_12" >
+
+
+			<div id='content3' style='top:400px; display:inline-block;'>
+			<ul style='top:100; margin:0px; padding:0px;'>
+		<li style='float:left;list-style-type: none; text-align:left; margin-left:0PX;'>
+
+				<img src="image/play2_im/w1.png" style='width:400px; height:400px; '/>
+
+				<div id='text1' style='text-align:left;'>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<p id='aba2' style='text-align:left;'><b id='soro' style='font-weight:600; font-size:17px;'>서브페이지 실습</b><br/>
+					<img src='image/play2_im/star.png' style='width:10px;'/>13주차<br/>
+					<img src='image/play2_im/star.png' style='width:10px;'/>css를 활용한 회사 메인페이지 및 서브페이지 제작<br/>
+
+				</p>
+				</div>
+<div class='clear'></div>
+		</li>
+
+		<li style='float:left;list-style-type: none; text-align:left;'>
+
+				<img src="image/play2_im/w2.png" style='width:400px; height:400px; '/>
+
+				<div id='text1' style='text-align:left;'>
+					<br/>
+					<br/>
+						<br/>
+					<br/>
+				<p id='aba2' style='text-align:left;'><b id='soro' style='font-weight:700; font-size:17px;'>메인 페이지 실습</b><br/>
+					<img src='image/play2_im/star.png' style='width:10px;'/>12주차<br/>
+					<img src='image/play2_im/star.png' style='width:10px;'/>css를 활용 간단한 메인페이지 제작 실습 <br/>
+
+				</p>
+				</div>
+<div class='clear'></div>
+		</li>
+
+		<li style='float:left;list-style-type: none; text-align:left;'>
+
+				<img src="image/play2_im/w3.png" style='width:400px; height:400px; '/>
+
+				<div id='text1' style='text-align:left;'>
+					<br/>
+					<br/>
+					<br/>
+					<br/>
+					<p id='aba2' style='text-align:left;'><b id='soro' style='font-weight:700; font-size:17px;'>로그인 페이지</b><br/>
+						<img src='image/play2_im/star.png' style='width:10px;'/>12주차<br/>
+						<img src='image/play2_im/star.png' style='width:10px;'/>css를 활용한 로그인 페이지 실습 <br/>
+
+					</p>
+					</div>
+<div class='clear'></div>
+		</li>
+				</div>
+<div class='clear'></div>
+</ul>
+</div>
+
+
+
+
+
+		</section>
+		<div class='clear'></div>
+		<section id="section4" style="height:962px; margin-top:100px;" class="c_m_12 c_12">
+				<div class='clear'></div>
+				<div id='goodbye' style='display:inline-block; margin-left:auto; margin-right:auto; width:1600px; height:400px; top:500px; z-index:4; margin-top: 00px; position: relative;' >
+
+
+
+				</div>
+
+			<div id='contents5'  style='z-index:1;position: relative; top:103px; display:inline-block; width:100%; font-size:0;line-height:0;'>
+
+					<ul style='list-style-type:none; width:100%; margin:0px; padding:0px;'>
+
+						<h3 class="content_title">Work</h3>
+						<p class="content_detail">웹퍼블리싱외에 작업물입니다..</p>
+
+					<li style='float:left; width:25%; display:block;'>
+				<ul style='list-style-type:none; width:100%; margin:0px; padding:0px;'>
+				<li style='width:100%; list-style-type:none; margin:0px; padding:0px;'><img src='image/play2_im/10.jpg' style='width:100%;'/></li>
+				<li style='width:100%; list-style-type:none; margin:0px; padding:0px;'><img src='image/play2_im/12.jpg' style='width:100%;'/></li>
+				<div class='clear'></div>
 				</ul>
-				<p>copyright (c) 2019 Kim Hyuk</p>
-			</div>
-		</div>
+					</li>
 
+
+
+
+				<li style='float:left; width:50%; list-style-type:none; display:block;'><img src='image/play2_im/11.jpg' style='width:100%;'/></li>
+
+
+
+
+					<li style='float:left; width:25%; display:block;'>
+				<ul style='list-style-type:none; width:100%; margin:0px; padding:0px;'>
+				<li style='width:100%; list-style-type:none; margin:0px; padding:0px;'><img src='image/play2_im/13.jpg' style='width:100%;'/></li>
+				<li style='width:100%; list-style-type:none; margin:0px; padding:0px;'><img src='image/play2_im/14.jpg' style='width:100%;'/></li>
+				<div class='clear'></div>
+				</ul>
+					</li>
+
+
+
+
+				<div class='clear'></div>
+				</ul>
+				<div class='clear'></div>
+			</div>
+			<div class='clear'></div>
+
+		</section>
+
+
+		<section id="section5" style="width:100%; height:420px; top:-150px; margin-top:0px; padding-top:140px; background-color:#385444;">
+
+			<ul style="list-style-type:none; text-align:left; padding-left:130px; margin-top:0px; padding-top: 100px;
+				display:inline-block; width:970px;">
+
+					<div style="float:left; text-align:left; width:300px;">
+				<li style="font-size:35px;">
+				<h1 style="color:#f5cbc0; padding-bottom:40px; margin:0px;">How to Contact</h1>
+				</li>
+				<li><p style="color:white; font-weight:100;font-size:15px; margin:0px; padding:0px;">Phone : 010 - 6241- 9693</p></li>
+				<li><p style="color:white; font-weight:100; font-size:15px; margin:0px; padding-top:10px;">e-mail : pa3326@naver.com</p></li>
+
+					<li style="padding-top:10px;">
+
+					<a href="https://www.instagram.com/kimhxxk/"><img src='image/play2_im/instagram.png' style='width:10%; float:left;'/></a>
+					<a href="https://www.youtube.com/watch?v=Xpdo1rKb8UU&t=229s"><img src='image/play2_im/youtube.png' style=' width:10%; float:left; padding-left:20px;'/></a>
+					<a href="https://ko-kr.facebook.com/"><img src='image/play2_im/facebook.png' style=' width:10%; float:left; padding-left:20px;'/></a>
+					</li>
+
+					</div>
+
+
+					<div style="float:left; text-align:left; width:570px; margin-left:100px; top:-20px;">
+				<li style="font-size:35px;"><h1 style="color:#f5cbc0; padding-bottom:40px; margin:0px; ">After Project</h1></li>
+				<li style="color:white;"><p style="font-weight:100;font-size:13px; margin:0px; padding:0px;">
+					웹퍼블리싱은 이제 나와 상관없는 일인줄 알았지만<br/>
+					2학년이 되어도 HTML을 해야한다는 사실에 조금 좌절했지만<br/>
+					다양한 실습과 빠른퇴근으로 작년보단 훨씬 재밌게 수업도하고 과제를 하며<br/>
+					많은 배움들을 얻은 것 같습니다.<br/>
+					아무래도 교수님의 가르침 덕분이 아닐까 싶습니다. 하하^0^/<br/>
+					교수님 한학기동안 고생하셨습니다. 감사합니다!
+
+				</p></li>
+					</div>
+
+
+
+
+
+
+				<div class='clear'></div>
+				</ul>
+				<div class='clear'></div>
+
+
+			<div class='clear'></div>
+		</section>
 
 	</div>
+
+
 </body>
 </html>
